@@ -7,7 +7,7 @@
 
 | Create Account | Access Developer | Name | ID and secret |
 | --- | --- | --- | --- |
-| <img src="https://i.imgur.com/l5tWhOW.png" title="source: imgur.com" width="175" height="175" /> | <img src="https://i.imgur.com/Ir7Nqx6.png" title="source: imgur.com" width="175" height="175" /> | <img src="https://i.imgur.com/1hoKGvH.png" title="source: imgur.com" width="175" height="175" /> | <img src="https://i.imgur.com/JmH5vBn.png" title="source: imgur.com" width="175" height="175" /> |
+| <img src="https://i.imgur.com/l5tWhOW.png" title="source: imgur.com" width="200" height="200" /> | <img src="https://i.imgur.com/Ir7Nqx6.png" title="source: imgur.com" width="200" height="200" /> | <img src="https://i.imgur.com/1hoKGvH.png" title="source: imgur.com" width="200" height="200" /> | <img src="https://i.imgur.com/JmH5vBn.png" title="source: imgur.com" width="200" height="200" /> |
 
 
 
