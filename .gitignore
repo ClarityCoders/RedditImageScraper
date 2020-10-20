@@ -1,0 +1,4 @@
+/env
+/images
+__pycache__
+token.pickle
