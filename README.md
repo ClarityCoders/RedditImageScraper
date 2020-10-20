@@ -24,4 +24,4 @@
 
 <a href="https://discord.gg/cAWW5qq"><img
                 alt="Discord"
-                src="https://img.shields.io/discord/709518323720912956"></a>
+                src="https://img.shields.io/discord/709518323720912956?label=Discord&logo=discord&logoColor=ffffff&labelColor=7289DA&color=2c2f33"></a>
