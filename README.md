@@ -5,14 +5,11 @@
 - Create Web app.
 - Note Client_id and Client Secret
 
-| Command | Description |
-| --- | --- |
-| <img src="https://i.imgur.com/l5tWhOW.png" title="source: imgur.com" width="100" />
- | <img src="https://i.imgur.com/Ir7Nqx6.png" title="source: imgur.com" width="100" />
- |
-| git diff | Show file differences that haven't been staged |
+| Create Account | Access Developer | Name | ID and secret |
+| --- | --- | --- | --- |
+| <img src="https://i.imgur.com/l5tWhOW.png" title="source: imgur.com" width="150" height="150" /> | <img src="https://i.imgur.com/Ir7Nqx6.png" title="source: imgur.com" width="150" height="150" /> | <img src="https://i.imgur.com/1hoKGvH.png" title="source: imgur.com" width="150" height="150" /> | <img src="https://i.imgur.com/JmH5vBn.png" title="source: imgur.com" width="150" height="150" /> |
 
-<img src="https://i.imgur.com/l5tWhOW.png" title="source: imgur.com" />
+
 
 ## Need more help?
 - YouTube <a href="https://www.youtube.com/claritycoders" target="_blank">Clarity Coders</a>
