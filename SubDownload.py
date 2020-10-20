@@ -7,6 +7,8 @@ import pickle
 
 from utils.create_token import create_token
 
+POST_SEARCH_AMOUNT = 5
+
 # Create directory if it doesn't exist to save images
 def create_folder(image_path):
     CHECK_FOLDER = os.path.isdir(image_path)
@@ -46,7 +48,7 @@ for line in f_final:
 
     print(f"Starting {sub}!")
     count = 0
-    for submission in subreddit.new(limit=20):
+    for submission in subreddit.new(limit=POST_SEARCH_AMOUNT):
         if "jpg" in submission.url.lower() or "png" in submission.url.lower():
             try:
                 resp = requests.get(submission.url.lower(), stream=True).raw
@@ -70,7 +72,7 @@ for line in f_final:
                         ignore_flag = True
 
                 if not ignore_flag:
-                    cv2.imwrite(f"{image_path}{sub}{count}.png", image)
+                    cv2.imwrite(f"{image_path}{sub}-{submission.id}.png", image)
                     count += 1
                     
             except Exception as e:
