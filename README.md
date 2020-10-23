@@ -1,4 +1,4 @@
-<a href="https://www.youtube.com/claritycoders" target="_blank"><img src="https://i.imgur.com/sG7xxyc.png" title="Clarity Coders YouTube" /></a>
+<a href="https://youtu.be/HubXt90MLfI" target="_blank"><img src="https://i.imgur.com/sG7xxyc.png" title="Clarity Coders YouTube" /></a>
 
 ## Create a reddit account!
 - Signup for a reddit account.
