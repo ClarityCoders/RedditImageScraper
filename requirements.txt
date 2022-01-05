@@ -1,12 +1,14 @@
 certifi==2020.6.20
 chardet==3.0.4
 idna==2.10
-numpy==1.19.2
+numpy==1.22.0
 opencv-python==4.4.0.44
-praw==7.1.0
-prawcore==1.5.0
+praw==7.5.0
+prawcore==2.3.0
 requests==2.24.0
 six==1.15.0
 update-checker==0.18.0
 urllib3==1.25.10
 websocket-client==0.57.0
+stdiomask==0.0.6
+
