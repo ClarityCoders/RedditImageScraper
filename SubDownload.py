@@ -18,8 +18,8 @@ def create_folder(image_path):
 
 # Path to save images
 dir_path = os.path.dirname(os.path.realpath(__file__))
-image_path = os.path.join(dir_path, "images/")
-ignore_path = os.path.join(dir_path, "ignore_images/")
+image_path = os.path.join(dir_path, 'images/')
+ignore_path = os.path.join(dir_path, 'ignore_images/')
 create_folder(image_path)
 
 # Get token file to log into reddit.
@@ -30,29 +30,31 @@ if os.path.exists('token.pickle'):
         creds = pickle.load(token)
 else:
     creds = create_token()
-    pickle_out = open("token.pickle","wb")
+    pickle_out = open('token.pickle','wb')
     pickle.dump(creds, pickle_out)
 
-reddit = praw.Reddit(client_id=creds['client_id'],
-                    client_secret=creds['client_secret'],
-                    user_agent=creds['user_agent'],
-                    username=creds['username'],
-                    password=creds['password'])
+reddit = praw.Reddit(
+    client_id = creds['client_id'],
+    client_secret = creds['client_secret'],
+    user_agent = creds['user_agent'],
+    username = creds['username'],
+    password = creds['password']
+)
 
 
-f_final = open("sub_list.csv", "r")
+f_final = open('sub_list.csv', 'r')
 img_notfound = cv2.imread('imageNF.png')
 for line in f_final:
     sub = line.strip()
     subreddit = reddit.subreddit(sub)
 
-    print(f"Starting {sub}!")
+    print(f'Starting {sub}!')
     count = 0
     for submission in subreddit.new(limit=POST_SEARCH_AMOUNT):
-        if "jpg" in submission.url.lower() or "png" in submission.url.lower():
+        if 'jpg' in submission.url.lower() or 'png' in submission.url.lower():
             try:
                 resp = requests.get(submission.url.lower(), stream=True).raw
-                image = np.asarray(bytearray(resp.read()), dtype="uint8")
+                image = np.asarray(bytearray(resp.read()), dtype='uint8')
                 image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
                 # Could do transforms on images like resize!
@@ -72,10 +74,10 @@ for line in f_final:
                         ignore_flag = True
 
                 if not ignore_flag:
-                    cv2.imwrite(f"{image_path}{sub}-{submission.id}.png", image)
+                    cv2.imwrite(f'{image_path}{sub}-{submission.id}.png', image)
                     count += 1
                     
             except Exception as e:
-                print(f"Image failed. {submission.url.lower()}")
+                print(f'Image failed. {submission.url.lower()}')
                 print(e)
         
